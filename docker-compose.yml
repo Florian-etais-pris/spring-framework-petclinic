@@ -1,0 +1,5 @@
+services:
+ petclinic:
+   image: florian23/petclinic:latest
+   ports:
+   - "9090:8080"
