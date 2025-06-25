@@ -6,11 +6,10 @@ services:
 
  db:
   image: mysql:8.0
-  environement:
+  environment:
     - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=petclinic
     - MYSQL_USER=petclinic
     - MYSQL_PASSWORD=petclinic
-  
- ports:
-   - "3306":"3306"
+  ports:
+  - "3306:3306"
