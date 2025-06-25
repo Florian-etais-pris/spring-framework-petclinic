@@ -3,3 +3,14 @@ services:
    image: florian23/petclinic:latest
    ports:
    - "9090:8080"
+
+ db:
+  image: mysql:8.0
+  environement:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=petclinic
+    - MYSQL_USER=petclinic
+    - MYSQL_PASSWORD=petclinic
+  
+ ports:
+   - "3306":"3306"
